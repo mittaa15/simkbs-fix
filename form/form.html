@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Surat Pengantar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .kop-surat {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .kop-surat h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .form-surat {
+            margin-bottom: 20px;
+        }
+
+        .form-surat label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-surat input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .form-surat textarea {
+            width: 100%;
+            height: 100px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .tanda-tangan {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="kop-surat">
+        <h1>KOP SURAT RT</h1>
+        <p>Jalan Raya No. 123, Desa Mekarsari, Kecamatan Cikarang</p>
+    </div>
+
+    <div class="form-surat">
+        <form action="proses_surat.php" method="post">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" required></textarea>
+
+            <label for="keperluan">Keperluan:</label>
+            <textarea id="keperluan" name="keperluan" required></textarea>
+
+            <input type="submit" value="Buat Surat">
+        </form>
+    </div>
+
+    <div class="tanda-tangan">
+        <p>Tanda Tangan RT</p>
+    </div>
+</body>
+</html>
